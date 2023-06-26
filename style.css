@@ -1,0 +1,295 @@
+:root {
+    --black: #000000;
+    --dark: #272f3a88;
+    --gray: #c3c3c3;
+    --white: #f6f2f1;
+    --red: #f12137;
+    --smoke: #000000;
+    --back: #272f3a;
+}
+
+
+@font-face {
+    font-family: "LibreBaskerville";
+    src: url("./font/LibreBaskerville-Regular.ttf");
+}
+
+body {
+    margin : 0;
+    width: 100%;
+    background-color: var(--back);
+    font-family: "LibreBaskerville";
+    font-size: 14px;
+    overflow-y: scroll;
+}
+
+a {
+    color: var(--red);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--white);
+}
+
+.arrow {
+    border: solid var(--white);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    margin: 2px;
+}
+
+.arrow.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.arrow.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.arrow.up {
+    transform: translateY(4px) rotate(-135deg);
+    -webkit-transform: translateY(4px) rotate(-135deg);
+}
+
+.arrow.down {
+    transform: translateY(0px) rotate(45deg);
+    -webkit-transform: translateY(0px) rotate(45deg);
+}
+
+.smoke {
+    background-color: var(--back);
+    position: fixed;
+    width: 40px;
+    height: 100vh;
+    margin: 0px;
+    display: block;
+}
+
+.smoke.left {
+    left: calc(50% - 464px);
+    transform: scaleX(1)
+}
+
+.smoke.right {
+    right: calc(50% - 464px);
+    transform: scaleX(-1)
+}
+
+.waves {
+    position: relative;
+    width: 40px;
+    height: 100%;
+    margin-bottom: -7px;
+}
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+
+.parallax > use:nth-child(1) {
+    animation-delay: -4.9s;
+    animation-duration: 12s;
+}
+
+.parallax > use:nth-child(2) {
+    animation-delay: -6.3s;
+    animation-duration: 20s;
+}
+
+.parallax > use:nth-child(3) {
+    animation-delay: -8.4s;
+    animation-duration: 26s;
+}
+
+.parallax > use:nth-child(4) {
+    animation-delay: -10.5s;
+    animation-duration: 40s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(0,00px,0);
+    }
+    100% { 
+        transform: translate3d(0,60px,0);
+    }
+}
+
+#page {
+    width: 800px;
+    margin: auto;
+    background-color: var(--black);
+    padding: 0px 40px;
+}
+
+#header {
+    color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    padding-top: 24px;
+}
+
+#title {
+    color: var(--white);
+    margin: auto 8px;
+    font-size: 32px;
+    vertical-align: middle;
+}
+
+#links {
+    color: var(--white);
+}
+
+#email {
+    text-align: right;
+    margin: 4px;
+}
+
+#sites {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sites a {
+    margin: 0px 4px;
+}
+
+#content {
+    height: 100%;
+}
+
+.section {
+    color: var(--gray);
+    font-size: 24px;
+    margin: 8px;
+    padding: 8px;
+    margin-top: 16px;
+    margin-bottom: -16px;
+}
+
+.entry {
+    background-color: var(--dark);
+    color: var(--gray);
+    padding: 8px;
+    margin: 8px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.entry .main {
+    display: flex;
+}
+
+.entry .main .image img {
+    object-fit: cover;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 8px;
+    border: 1px solid var(--black);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.entry .main .text {
+    margin: 8px;
+    width: 100%;
+}
+
+.entry .main .text .title {
+    color: var(--white);
+    font-size: 24px;
+}
+
+.entry .main .text .info {
+    color: var(--white);
+    margin-bottom: 8px;
+}
+
+.entry .main .text .description {
+    text-align: justify;
+}
+
+.entry .links {
+    display: flex;
+    align-items: center;
+    margin: 2px;
+}
+
+.entry .links a {
+    padding: 2px;
+    margin: 2px;
+}
+
+.entry .expand {
+    text-align: right;
+    margin: 0px 8px;
+    flex-grow: 2;
+    color: var(--red);
+    user-select: none;
+    cursor: pointer;
+}
+
+.entry .expand:hover {
+    color: var(--white);
+}
+
+.entry .more {
+    background-color: var(--black);
+    border: 1px solid black;
+    padding: 2px;
+    display: none;
+}
+
+.entry .more .thumbnails {
+    margin: 2px;
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.entry .more .thumbnails img {
+    height: auto;
+    width: 180px;
+    margin: 4px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#viewer {
+    display: none;
+    background-color: #000000ee;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+#viewer .image{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 90vw;
+    transform: translate(-50%, -50%);
+}
+
+#viewer .image img{
+    display: block;
+    width: 100%;
+    object-fit: scale-down;
+    cursor: auto;
+}
+
+#footer {
+    padding: 8px;
+    color: var(--gray);
+    text-align: center;
+}

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="smoke left">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 80 90" preserveAspectRatio="xMaxYMid slice">
+                <defs>
+                    <path id="gentle-wave" d="M 80 -90 c 0 4 -4 20 -4 30 s 4 20 4 30 -4 20 -4 30 4 20 4 30 -4 20 -4 30 4 20 4 30 -4 20 -4 30 4 20 4 30 -4 20 -4 30 v 0 h 4 z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="0" y="8" fill="var(--smoke)" opacity="0.1"/>
+                    <use xlink:href="#gentle-wave" x="0" y="4" fill="var(--smoke)" opacity="0.2"/>
+                    <use xlink:href="#gentle-wave" x="0" y="2" fill="var(--smoke)" opacity="0.4"/>
+                    <use xlink:href="#gentle-wave" x="0" y="0" fill="var(--smoke)" opacity="0.6"/>
+                </g>
+            </svg>
+        </div>
+        <div class="smoke right">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 80 90" preserveAspectRatio="xMaxYMid slice">
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="0" y="8" fill="var(--smoke)" opacity="0.1"/>
+                    <use xlink:href="#gentle-wave" x="0" y="4" fill="var(--smoke)" opacity="0.2"/>
+                    <use xlink:href="#gentle-wave" x="0" y="2" fill="var(--smoke)" opacity="0.4"/>
+                    <use xlink:href="#gentle-wave" x="0" y="0" fill="var(--smoke)" opacity="0.6"/>
+                </g>
+            </svg>
+        </div>
+        <div id="page">
+            <div id="header">
+                <div id="title">BRUNO PREGUN | PORTFOLIO</div>
+                <div id="links">
+                    <div id="email">bruno@pregun.com</div>
+                    <div id="sites">
+                        <a href="https://www.linkedin.com/in/bruno-pregun/">LinkedIn</a>
+                        <a href="./BPCV.pdf">Resume</a>
+                    </div>
+                </div>
+            </div>
+            <div id="content">
+                <div class="entry">
+                    <div class="main">
+                        <div class="text">
+                            <div class="title">About Me</div>
+                            <div class="description">
+                                I am a freelance game programmer and designer with several years of professional experience in the games industry. Driven by passion for creating immersive experiences, engaging gameplay mechanics, and compelling virtual worlds and narratives.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">Professional Work</div>
+                <div class="entry">
+                    <div class="main">
+                        <div class="image">
+                            <img src="./screens/cycle/screen.png" onclick="zoom(this)">
+                        </div>
+                        <div class="text">
+                            <div class="title">The Cycle: Frontier</div>
+                            <div class="info">Free-to-play Extraction Shooter</div>
+                            <div class="description">
+                                <p>As a freelance Game Engineer at YAGER, I helped develop and support their live service extraction shooter game (made in UE4).</p>
+                                <p>My main focus were meta / progression mechanics and UI engineering support. I also got the opportunity to learn and work with backend platforms (Azure, Playfab).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a href="https://store.steampowered.com/app/868270/The_Cycle_Frontier/">Steam</a>
+                        |<a href="https://store.epicgames.com/en-US/p/thecycle">Epic Games Store</a>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="main">
+                        <div class="image">
+                            <img src="./screens/scum/screen.png" onclick="zoom(this)">
+                        </div>
+                        <div class="text">
+                            <div class="title">SCUM</div>
+                            <div class="info">Online Multiplayer Open-world Surival Game</div>
+                            <div class="description">
+                                <p>At Gamepires, my responsibilities were to design, implement, and monitor various gameplay features for the game.</p>
+                                <p>I also designed and implemented UX and UI solutions for the game and authored in-house tools for level design and art departments.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a href="https://store.steampowered.com/app/513710/SCUM/">Steam</a>
+                    </div>
+                </div>
+                <div class="section">Personal Work</div>
+                <div class="entry">
+                    <div class="main">
+                        <div class="image">
+                            <img src="./screens/goblins/screen.png" onclick="zoom(this)">
+                        </div>
+                        <div class="text">
+                            <div class="title">Three Goblin Problem</div>
+                            <div class="info">Ludum Dare 49 Game Jam</div>
+                            <div class="description">
+                                <p>Goblins are profibited from entering a local tavern. Luckily they hatched a cunning plan. Help these three goblins quench their thirst in this short UE4 game.</p>
+                                <p>Entire game was made in 3 days by me and three of my friends. I was responsible for game design, environment models, level design, and the music for the fan-favourite Noir Mode™. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a href="https://ldjam.com/events/ludum-dare/49/the-three-goblin-problem">LudumDare</a>
+                        |<a href="https://blackflicka.itch.io/the-three-goblin-problem">Itch.io</a>
+                        <div class="expand" onclick="expand(this)">More images <div class="arrow down"></div></div>
+                    </div>
+                    <div class="more">
+                        <div class="thumbnails">
+                            <img src="./screens/goblins/start.png" onclick="zoom(this)">
+                            <img src="./screens/goblins/walkway.png" onclick="zoom(this)">
+                            <img src="./screens/goblins/above.png" onclick="zoom(this)">
+                            <img src="./screens/goblins/secret.png" onclick="zoom(this)">
+                            <img src="./screens/goblins/overview.png" onclick="zoom(this)">
+                            <img src="./screens/goblins/tables_nopp.png" onclick="zoom(this)">
+                            <img src="./screens/goblins/sword_nopp.png" onclick="zoom(this)">
+                            <img src="./screens/goblins/bar_nopp.png" onclick="zoom(this)">
+                        </div>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="main">
+                        <div class="image">
+                            <img src="./screens/slime/screen.png" onclick="zoom(this)">
+                        </div>
+                        <div class="text">
+                            <div class="title">Slime Castle</div>
+                            <div class="info">Student Project</div>
+                            <div class="description">
+                            <p>A platformer game developed in UE4 for a student project.</p>
+                            <p>My first real attempt at environment art and level design using modular approach. All assets were made from scratch.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/burstsort/Slime-Castle-2-Government-Edition">Demo</a>
+                        <div class="expand" onclick="expand(this)">More images <div class="arrow down"></div></div>
+                    </div>
+                    <div class="more">
+                        <div class="thumbnails">
+                            <img src="./screens/slime/forest.png" onclick="zoom(this)">
+                            <img src="./screens/slime/bridge.png" onclick="zoom(this)">
+                            <img src="./screens/slime/castle.png" onclick="zoom(this)">
+                            <img src="./screens/slime/gatehouse.png" onclick="zoom(this)">
+                            <img src="./screens/slime/approach.png" onclick="zoom(this)">
+                            <img src="./screens/slime/under.png" onclick="zoom(this)">
+                            <img src="./screens/slime/jumping.png" onclick="zoom(this)">
+                            <img src="./screens/slime/debris.png" onclick="zoom(this)">
+                            <img src="./screens/slime/candles.png" onclick="zoom(this)">
+                            <img src="./screens/slime/court.png" onclick="zoom(this)">
+                            <img src="./screens/slime/cave.png" onclick="zoom(this)">
+                            <img src="./screens/slime/hall.png" onclick="zoom(this)">
+                            <img src="./screens/slime/cathedral.png" onclick="zoom(this)">
+                            <img src="./screens/slime/shine.png" onclick="zoom(this)">
+                            <img src="./screens/slime/path.png" onclick="zoom(this)">
+                            <img src="./screens/slime/ziggurat.png" onclick="zoom(this)">
+                            <img src="./screens/slime/leaning.png" onclick="zoom(this)">
+                            <img src="./screens/slime/graveyard.png" onclick="zoom(this)">
+                            <img src="./screens/slime/abandoned.png" onclick="zoom(this)">
+                            <img src="./screens/slime/fence.png" onclick="zoom(this)">
+                            <img src="./screens/slime/decay.png" onclick="zoom(this)">
+                            <img src="./screens/slime/entrance.png" onclick="zoom(this)">
+                            <img src="./screens/slime/cages.png" onclick="zoom(this)">
+                            <img src="./screens/slime/breakout.png" onclick="zoom(this)">
+                            <img src="./screens/slime/secret.png" onclick="zoom(this)">
+                            <img src="./screens/slime/scorching.png" onclick="zoom(this)">
+                            <img src="./screens/slime/ruin.png" onclick="zoom(this)">
+                            <img src="./screens/slime/desert.png" onclick="zoom(this)">
+                        </div>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="main">
+                        <div class="image">
+                            <img src="./screens/fer/hall.png" onclick="zoom(this)">
+                        </div>
+                        <div class="text">
+                            <div class="title">Fer Simulator 2015</div>
+                            <div class="info">Virtual Interior Design</div>
+                            <div class="description">
+                                <p>An application developed as part of college thesis on the design of complex virtual interiors.</p>
+                                <p>The environment is modeled after the main collage hallway. All models are made to scale and imported into Unreal Engine 4.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/burstsort/FerSimulator2015">Github</a>
+                        |<a href="https://github.com/burstsort/FerSimulator2015VR">Github (VR version)</a>
+                        <div class="expand" onclick="expand(this)">More images <div class="arrow down"></div></div>
+                    </div>
+                    <div class="more">
+                        <div class="thumbnails">
+                            <img src="./screens/fer/north.png" onclick="zoom(this)">
+                            <img src="./screens/fer/south.png" onclick="zoom(this)">
+                            <img src="./screens/fer/aleja.png" onclick="zoom(this)">
+                            <img src="./screens/fer/overview.png" onclick="zoom(this)">
+                        </div>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="main">
+                        <div class="image">
+                            <img src="./screens/bonekeep/screen.png">
+                        </div>
+                        <div class="text">
+                            <div class="title">Bonekeep</div>
+                            <div class="info">Game prototype using a custom engine</div>
+                            <div class="description">
+                                <p>Over the years I created many small protoype games as I was developing my custom OpenGL game engine. Bonekeep is one of such prototypes.</p>
+                                <p>
+                                    <ul>
+                                    <li>Very easy to use, minimalist, and cache-friendly Entity Component System</li>
+                                    <li>Resource manager for loading and unloading assets from memory</li>
+                                    <li>2D animated sprite renderer</li>
+                                    <li>Support for audio playback / streaming</li>
+                                    <li>Collision system using AABB and spacial hashing for broad phase detection</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/burstsort/Bonekeep">Github</a>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="main">
+                        <div class="image">
+                            <img src="./screens/sonder/screen.png">
+                        </div>
+                        <div class="text">
+                            <div class="title">Sonder</div>
+                            <div class="info">Mesh Cutting implementation in OpenGL</div>
+                            <div class="description">
+                                <p>Another student project. An example of mesh cutting algorithm that can split any mesh in multiple peices.</p>
+                                <p>Inspired by Metal Gear Rising: Revengeance.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/burstsort/Sunder">Github</a>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="main">
+                        <div class="image">
+                            <img src="./screens/cloth/screen.png">
+                        </div>
+                        <div class="text">
+                            <div class="title">Cloth Simulation</div>
+                            <div class="info">Particle and cloth physics simulation</div>
+                            <div class="description">
+                                <p>An example of particles and cloth physics simulation using verlet itegration.</p>
+                                <p>Rendering done using OpenGL.</p>
+                                <p>Developed as a student project.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/burstsort/ClothSimulation">Github</a>
+                    </div>
+                </div>
+                <div class="section">Work in Progress</div>
+                <div class="entry">
+                    <div class="main">
+                        <div class="image">
+                            <img src="./screens/castle/dome.png" onclick="zoom(this)">
+                        </div>
+                        <div class="text">
+                            <div class="title">Castle Game (WIP)</div>
+                            <div class="info">Personal project</div>
+                            <div class="description">
+                                Castle environment for a first person horror project. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <div class="expand" onclick="expand(this)">More images <div class="arrow down"></div></div>
+                    </div>
+                    <div class="more">
+                        <div class="thumbnails">
+                            <img src="./screens/castle/top.png" onclick="zoom(this)">
+                            <img src="./screens/castle/above.png" onclick="zoom(this)">
+                            <img src="./screens/castle/bridge.png" onclick="zoom(this)">
+                            <img src="./screens/castle/chimney.png" onclick="zoom(this)">
+                            <img src="./screens/castle/cloister.png" onclick="zoom(this)">
+                            <img src="./screens/castle/stairs.png" onclick="zoom(this)">
+                            <img src="./screens/castle/hall.png" onclick="zoom(this)">
+                            <img src="./screens/castle/lecture.png" onclick="zoom(this)">
+                            <img src="./screens/castle/archive.png" onclick="zoom(this)">
+                            <img src="./screens/castle/bellfry.png" onclick="zoom(this)">
+                            <img src="./screens/castle/temple.png" onclick="zoom(this)">
+                            <img src="./screens/castle/shrine.png" onclick="zoom(this)">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                Copyright © 2023 Bruno Pregun
+            </div>
+        </div>
+        <div id="viewer">
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
+
