@@ -2,6 +2,8 @@ function zoom(self) {
     var viewer = document.getElementById("viewer");
     var content = document.getElementById("content");
     var path = typeof self === 'string' ? self : self.src;
+    path = path.replace("_thumb", "")
+
     var image = new Image();
     image.src = path;
     image.onload = function() {
