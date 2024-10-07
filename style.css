@@ -1,11 +1,11 @@
 :root {
-    --black: #000000;
-    --dark: #272f3a88;
-    --gray: #c3c3c3;
-    --white: #f6f2f1;
-    --red: #f12137;
-    --smoke: #000000;
-    --back: #272f3a;
+    --black: #000;
+    --dark: #111;
+    --gray: #ccc;
+    --white: #fff;
+    --red: #f23;
+    --smoke: #000;
+    --back: #101;
 }
 
 
@@ -87,27 +87,27 @@ a:hover {
 }
 
 .parallax > use {
-    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+    animation: move-forever 2.5s cubic-bezier(.55,.5,.45,.5)     infinite;
 }
 
 .parallax > use:nth-child(1) {
     animation-delay: -4.9s;
-    animation-duration: 12s;
+    animation-duration: 1.2s;
 }
 
 .parallax > use:nth-child(2) {
     animation-delay: -6.3s;
-    animation-duration: 20s;
+    animation-duration: 2.0s;
 }
 
 .parallax > use:nth-child(3) {
     animation-delay: -8.4s;
-    animation-duration: 26s;
+    animation-duration: 2.6s;
 }
 
 .parallax > use:nth-child(4) {
     animation-delay: -10.5s;
-    animation-duration: 40s;
+    animation-duration: 4.0s;
 }
 
 @keyframes move-forever {
@@ -115,7 +115,7 @@ a:hover {
         transform: translate3d(0,00px,0);
     }
     100% { 
-        transform: translate3d(0,60px,0);
+        transform: translate3d(0,-60px,0);
     }
 }
 
