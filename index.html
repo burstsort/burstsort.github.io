@@ -13,9 +13,9 @@
                     <path id="gentle-wave" d="M 80 -90 c 0 3 -3 20 -3 30 s 3 20 3 30 -3 20 -3 30 3 20 3 30 -3 20 -3 30 3 20 3 30 -3 20 -3 30 3 20 3 30 -3 20 -3 30 v 0 h 3 z" />
                 </defs>
                 <g class="parallax">
-                    <use xlink:href="#gentle-wave" x="0" y="8" fill="var(--smoke)" opacity="0.1"/>
-                    <use xlink:href="#gentle-wave" x="0" y="4" fill="var(--smoke)" opacity="0.2"/>
-                    <use xlink:href="#gentle-wave" x="0" y="2" fill="var(--smoke)" opacity="0.4"/>
+                    <use xlink:href="#gentle-wave" x="0" y="80" fill="var(--smoke)" opacity="0.1"/>
+                    <use xlink:href="#gentle-wave" x="0" y="40" fill="var(--smoke)" opacity="0.2"/>
+                    <use xlink:href="#gentle-wave" x="0" y="20" fill="var(--smoke)" opacity="0.4"/>
                     <use xlink:href="#gentle-wave" x="0" y="0" fill="var(--smoke)" opacity="0.6"/>
                 </g>
             </svg>
@@ -23,9 +23,9 @@
         <div class="smoke right">
             <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 80 90" preserveAspectRatio="xMaxYMid slice">
                 <g class="parallax">
-                    <use xlink:href="#gentle-wave" x="0" y="8" fill="var(--smoke)" opacity="0.1"/>
-                    <use xlink:href="#gentle-wave" x="0" y="4" fill="var(--smoke)" opacity="0.2"/>
-                    <use xlink:href="#gentle-wave" x="0" y="2" fill="var(--smoke)" opacity="0.4"/>
+                    <use xlink:href="#gentle-wave" x="0" y="80" fill="var(--smoke)" opacity="0.1"/>
+                    <use xlink:href="#gentle-wave" x="0" y="40" fill="var(--smoke)" opacity="0.2"/>
+                    <use xlink:href="#gentle-wave" x="0" y="20" fill="var(--smoke)" opacity="0.4"/>
                     <use xlink:href="#gentle-wave" x="0" y="0" fill="var(--smoke)" opacity="0.6"/>
                 </g>
             </svg>
@@ -33,7 +33,7 @@
         <div id="page">
             <div id="header">
                 <div id="title">BRUNO PREGUN | PORTFOLIO</div>
-                <div id="links">
+                <div id="contact">
                     <div id="email">bruno@pregun.com</div>
                     <div id="sites">
                         <a href="https://www.linkedin.com/in/bruno-pregun/">LinkedIn</a>
@@ -41,26 +41,88 @@
                     </div>
                 </div>
             </div>
+            <div id="castle">
+                <img src="images/castle.png">
+                <div id="name">Bruno Pregun</div>
+                <div id="role">Game Engineer & Designer</div>
+            </div>
             <div id="content">
                 <div class="entry">
                     <div class="main">
                         <div class="text">
                             <div class="title">About Me</div>
                             <div class="description">
-                                I am a freelance game programmer and designer with several years of professional experience in the games industry. Driven by passion for creating immersive experiences, engaging gameplay mechanics, and compelling virtual worlds and narratives.
+                                <p>Hi! My name is Bruno and I am a freelance game developer based in Zagreb. I am currently working at <a href="https://cutting-edge-games.com/our-studio/">Cutting Edge Entertainment</a>.</p>
+                                <p>I am driven by passion for creating immersive experiences, engaging gameplay mechanics, and compelling virtual worlds and narratives.</p>
+                                <p>Concentrating on Game Design, Level Design, Technical Design, and Programming.</p>
+                                
                             </div>
                         </div>
+                        <div class="portrait">
+                            <img src="./images/portrait/portrait.png">
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a href="https://www.linkedin.com/in/bruno-pregun/">LinkedIn</a>
+                        |<a href="./BrunoPregun_Resume.pdf">Resume</a>
+                        |<a href="mailto:bruno@pregun.com">Email</a>
                     </div>
                 </div>
                 <div class="section">Professional Work</div>
                 <div class="entry">
                     <div class="main">
                         <div class="image">
-                            <img src="./images/tgw/cover_thumb.jpg" onclick="zoom(this)">
+                            <img src="./images/564/cover_thumb.png" onclick="zoom(this)">
                         </div>
+                        <div class="date">2025</div>
+                        <div class="text">
+                            <div class="title">Habitat 564</div>
+                            <div class="info">First-Person Horror Narrative Game | UE5</div>
+                            <div class="description">
+                                <p>An unannounced project in pre-production. Designing and developing for Cutting Edge Entertainment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="main">
+                        <div class="image">
+                            <img src="./images/asteroid/cover_thumb.png" onclick="zoom(this)">
+                        </div>
+                        <div class="date">2025</div>
+                        <div class="text">
+                            <div class="title"">A Game About<br>Mining an Asteroid</div>
+                            <div class="info">Incremental Mining Game | Godot</div>
+                            <div class="description">
+                                <p>A minimalist game about space mining, space taxes, and space metaprogression.</p>
+                                <p>Originally developed as a game jam project. Currently working on a complete version.</p>
+                                <p>I was responsible for modeling and texturing of in-game assets, implementing weapon mechanics and various special effects.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a href="https://store.steampowered.com/app/3702370/A_Game_About_Mining_an_Asteroid/">Steam</a>
+                        |<a href="https://www.youtube.com/watch?v=rmdEJN-2kBE">Trailer</a>
+                        <div class="expand" onclick="expand(this)">Screenshots <div class="arrow down"></div></div>
+                    </div>
+                    <div class="more">
+                        <div class="thumbnails">
+                            <img src="./images/asteroid/laser_thumb.png" onclick="zoom(this)">
+                            <img src="./images/asteroid/swamp_thumb.png" onclick="zoom(this)">
+                            <img src="./images/asteroid/lava_thumb.png" onclick="zoom(this)">
+                            <img src="./images/asteroid/shop_thumb.png" onclick="zoom(this)">
+                        </div>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="main">
+                        <div class="image">
+                            <img src="./images/tgw/cover_thumb.png" onclick="zoom(this)">
+                        </div>
+                        <div class="date">2024</div>
                         <div class="text">
                             <div class="title">Three Goblin Wobblin'</div>
-                            <div class="info">Cozy Wobbling Simulator</div>
+                            <div class="info">Cozy Wobbling Simulator | UE5</div>
                             <div class="description">
                                 <p>A game jam project turned into a fully-fledged indie release.</p>
                                 <p>Balance three goblins in a trenchcoat to help them quench their thirst and end goblin discrimination. Traverse multiple diverse levels, collect hats to improve your disguise, pull levers to unlock shortcuts. The game also features an in-Game level editor where you can create your own challenges.</p>
@@ -76,14 +138,14 @@
                     </div>
                     <div class="more">
                         <div class="thumbnails">
-                            <img src="./images/tgw/apples_thumb.jpg" onclick="zoom(this)">
-                            <img src="./images/tgw/hotel_thumb.jpg" onclick="zoom(this)">
-                            <img src="./images/tgw/library_thumb.jpg" onclick="zoom(this)">
-                            <img src="./images/tgw/overlook_thumb.jpg" onclick="zoom(this)">
-                            <img src="./images/tgw/planks_thumb.jpg" onclick="zoom(this)">
-                            <img src="./images/tgw/ramparts_thumb.jpg" onclick="zoom(this)">
-                            <img src="./images/tgw/results_thumb.jpg" onclick="zoom(this)">
-                            <img src="./images/tgw/tutorial_thumb.jpg" onclick="zoom(this)">
+                            <img src="./images/tgw/apples_thumb.png" onclick="zoom(this)">
+                            <img src="./images/tgw/hotel_thumb.png" onclick="zoom(this)">
+                            <img src="./images/tgw/library_thumb.png" onclick="zoom(this)">
+                            <img src="./images/tgw/overlook_thumb.png" onclick="zoom(this)">
+                            <img src="./images/tgw/planks_thumb.png" onclick="zoom(this)">
+                            <img src="./images/tgw/ramparts_thumb.png" onclick="zoom(this)">
+                            <img src="./images/tgw/results_thumb.png" onclick="zoom(this)">
+                            <img src="./images/tgw/tutorial_thumb.png" onclick="zoom(this)">
                         </div>
                     </div>
                 </div>
@@ -93,9 +155,10 @@
                         <div class="image">
                             <img src="./images/cycle/screen_thumb.png" onclick="zoom(this)">
                         </div>
+                        <div class="date">2022-2023</div>
                         <div class="text">
                             <div class="title">The Cycle: Frontier</div>
-                            <div class="info">Free-to-play Extraction Shooter</div>
+                            <div class="info">Free-to-play Extraction Shooter | UE4</div>
                             <div class="description">
                                 <p>As a freelance Game Engineer at YAGER, I helped develop and support their live service extraction shooter game (made in UE4).</p>
                                 <p>My main focus were meta / progression mechanics and UI engineering support. I also got the opportunity to learn and work with backend platforms (Azure, Playfab).</p>
@@ -112,11 +175,12 @@
                         <div class="image">
                             <img src="./images/scum/screen_thumb.png" onclick="zoom(this)">
                         </div>
+                        <div class="date">2017-2022</div>
                         <div class="text">
                             <div class="title">SCUM</div>
-                            <div class="info">Online Multiplayer Open-world Surival Game</div>
+                            <div class="info">Online Multiplayer Open-world Surival Game | UE4</div>
                             <div class="description">
-                                <p>At Gamepires, my responsibilities were to design, implement, and monitor various gameplay features for the game.</p>
+                                <p>As a Game Programmer at Gamepires, my responsibilities were to design, implement, and monitor various gameplay features for the game.</p>
                                 <p>I also designed and implemented UX and UI solutions and authored in-house tools for level design and art departments.</p>
                             </div>
                         </div>
@@ -125,18 +189,19 @@
                         <a href="https://store.steampowered.com/app/513710/SCUM/">Steam</a>
                     </div>
                 </div>
-                <div class="section">Personal Work</div>
+                <div class="section">Personal / Student Work</div>
                 <div class="entry">
                     <div class="main">
                         <div class="image">
                             <img src="./images/goblins/screen_thumb.png" onclick="zoom(this)">
                         </div>
+                        <div class="date">2021</div>
                         <div class="text">
                             <div class="title">Three Goblin Problem</div>
-                            <div class="info">Ludum Dare 49 Game Jam</div>
+                            <div class="info">Ludum Dare 49 Game Jam | UE4</div>
                             <div class="description">
                                 <p>Goblins are prohibited from entering a local tavern. Luckily, they hatched a cunning plan. Help these three goblins quench their thirst in this short UE4 game.</p>
-                                <p>The entire game was made in three days by me and four of my friends. I was responsible for game design, environment models, level design, and the music for the fan-favourite Noir Mode™. </p>
+                                <p>The entire game was made in three days by me and four of my friends. I was responsible for game design, environment assets, and level design. </p>
                             </div>
                         </div>
                     </div>
@@ -163,9 +228,10 @@
                         <div class="image">
                             <img src="./images/slime/screen_thumb.png" onclick="zoom(this)">
                         </div>
+                        <div class="date">2017</div>
                         <div class="text">
                             <div class="title">Slime Castle</div>
-                            <div class="info">Student Project</div>
+                            <div class="info">Student Project | UE4</div>
                             <div class="description">
                             <p>A platformer game developed in UE4 for a student project.</p>
                             <p>My first real attempt at environment art and level design using a modular approach. All assets were made from scratch in Blender.</p>
@@ -214,9 +280,10 @@
                         <div class="image">
                             <img src="./images/fer/hall_thumb.png" onclick="zoom(this)">
                         </div>
+                        <div class="date">2015</div>
                         <div class="text">
                             <div class="title">Fer Simulator 2015</div>
-                            <div class="info">Virtual Interior Design</div>
+                            <div class="info">Virtual Interior Design | UE4</div>
                             <div class="description">
                                 <p>An application developed as part of a college thesis on the design of realistic virtual interiors.</p>
                                 <p>The environment is modeled after the main college hallway. All models are made to scale and imported into Unreal Engine 4.</p>
@@ -242,16 +309,17 @@
                         <div class="image">
                             <img src="./images/bonekeep/screen.png">
                         </div>
+                        <div class="date">2017</div>
                         <div class="text">
                             <div class="title">Bonekeep</div>
-                            <div class="info">Game prototype using a custom engine</div>
+                            <div class="info">Game prototype using a custom engine | C++</div>
                             <div class="description">
-                                <p>Over the years, I created many small prototypes as I was developing my custom OpenGL game engine. Bonekeep is one of these prototypes.</p>
+                                <p>Proof of concept game, made to test the capabilities of custom OpenGL game engine.</p>
                                 <p>The engine features:
                                     <ul>
-                                    <li>Very easy to use, minimalist, and cache-friendly Entity Component System</li>
-                                    <li>Resource manager for loading and unloading assets from memory</li>
-                                    <li>2D animated sprite renderer</li>
+                                    <li>Minimalist and cache-friendly Entity Component System</li>
+                                    <li>Resource manager for efficiently loading and unloading assets from memory</li>
+                                    <li>Animated 2D sprite rendering</li>
                                     <li>Support for audio playback / streaming</li>
                                     <li>Collision system using AABB and spatial hashing for broad phase detection</li>
                                     </ul>
@@ -268,9 +336,10 @@
                         <div class="image">
                             <img src="./images/sunder/screen.png">
                         </div>
+                        <div class="date">2017</div>
                         <div class="text">
                             <div class="title">Sunder</div>
-                            <div class="info">Mesh Cutting implementation in OpenGL</div>
+                            <div class="info">Mesh Cutting implementation in OpenGL | C++</div>
                             <div class="description">
                                 <p>Another student project. An example of a mesh cutting algorithm that can split any mesh into multiple pieces.</p>
                                 <p>Inspired by Metal Gear Rising: Revengeance.</a></p>
@@ -286,9 +355,10 @@
                         <div class="image">
                             <img src="./images/cloth/screen.png">
                         </div>
+                        <div class="date">2016</div>
                         <div class="text">
                             <div class="title">Cloth Simulation</div>
-                            <div class="info">Particle and cloth physics simulation</div>
+                            <div class="info">Particle and cloth physics simulation | C++</div>
                             <div class="description">
                                 <p>An example of particle and cloth physics simulation using Verlet integration in C++.</p>
                                 <p>Rendering is done using OpenGL.</p>
@@ -300,43 +370,8 @@
                         <a href="https://github.com/burstsort/ClothSimulation">Github</a>
                     </div>
                 </div>
-                <div class="section">Work in Progress</div>
-                <div class="entry">
-                    <div class="main">
-                        <div class="image">
-                            <img src="./images/castle/dome_thumb.png" onclick="zoom(this)">
-                        </div>
-                        <div class="text">
-                            <div class="title">Castle Game (WIP)</div>
-                            <div class="info">Personal project</div>
-                            <div class="description">
-                                Castle environment for a first person horror project. 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="links">
-                        <div class="expand" onclick="expand(this)">Screenshots <div class="arrow down"></div></div>
-                    </div>
-                    <div class="more">
-                        <div class="thumbnails">
-                            <img src="./images/castle/top_thumb.png" onclick="zoom(this)">
-                            <img src="./images/castle/above_thumb.png" onclick="zoom(this)">
-                            <img src="./images/castle/bridge_thumb.png" onclick="zoom(this)">
-                            <img src="./images/castle/chimney_thumb.png" onclick="zoom(this)">
-                            <img src="./images/castle/cloister_thumb.png" onclick="zoom(this)">
-                            <img src="./images/castle/stairs_thumb.png" onclick="zoom(this)">
-                            <img src="./images/castle/hall_thumb.png" onclick="zoom(this)">
-                            <img src="./images/castle/lecture_thumb.png" onclick="zoom(this)">
-                            <img src="./images/castle/archive_thumb.png" onclick="zoom(this)">
-                            <img src="./images/castle/bellfry_thumb.png" onclick="zoom(this)">
-                            <img src="./images/castle/temple_thumb.png" onclick="zoom(this)">
-                            <img src="./images/castle/shrine_thumb.png" onclick="zoom(this)">
-
-                        </div>
-                    </div>
-                </div>
                 <div id="footer">
-                    Copyright © 2024 Bruno Pregun
+                    Copyright © 2025 Bruno Pregun
                 </div>
             </div>
         </div>
