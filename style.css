@@ -17,8 +17,8 @@
 }
 
 @font-face {
-    font-family: "CloisterBlack";
-    src: url("./font/CloisterBlack/CloisterBlack.ttf");
+    font-family: "BerryRotunda";
+    src: url("./font/BerryRotunda/BerryRotunda.ttf");
 }
 
 body {
@@ -95,7 +95,7 @@ a:hover {
 }
 
 .parallax > use {
-    animation: move-forever 2.5s cubic-bezier(.55,.5,.45,.5)     infinite;
+    animation: move-forever 2.5s cubic-bezier(.55,.5,.45,.5) infinite;
 }
 
 .parallax > use:nth-child(1) {
@@ -170,39 +170,40 @@ a:hover {
     margin: 0px 4px;
 }
 
-#castle {
+#logo {
     color: var(--white);
     position: relative;
     bottom: -8px;
     text-align: center;
-    background-color: var(--color);
+    background-color: var(--black);
     transition-duration: var(--link-fade);
 }
 
-#castle img{
+#logo img{
     width: 100%;
     object-fit: contain;
     display: block;
     position: relative;
+    background-color: var(--color);
 }
 
 #name {
     position: absolute;
-    bottom: 45px;
+    bottom: 70px;
     left: -32px;
     color: var(--white);
-    font-size: 128px;
+    font-size: 80px;
     margin-left: 32px;
-    font-family: "CloisterBlack";
+    font-family: "BerryRotunda";
     width: 100%;
 }
 
 #role {
     position: absolute;
-    bottom: 20px;
+    bottom: 32px;
     color: var(--white);
-    font-size: 32px;
-    font-family: "CloisterBlack";
+    font-size: 24px;
+    font-family: "BerryRotunda";
     width: 100%;
 }
 
@@ -239,7 +240,7 @@ a:hover {
     transform: scaleX(0.25) scaleY(0.25);
     filter: brightness(0.25);
     top: -120px;
-    left: -120px;
+    left: -118px;
     pointer-events: none;
 }
 
@@ -250,7 +251,7 @@ a:hover {
     transform: scaleX(-0.25) scaleY(0.25);
     filter: brightness(0.25);
     top: -120px;
-    right: -120px;
+    right: -118px;
     pointer-events: none;
 }
 
