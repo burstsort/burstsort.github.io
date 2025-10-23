@@ -177,6 +177,7 @@ a:hover {
     text-align: center;
     background-color: var(--black);
     transition-duration: var(--link-fade);
+    height: 8px;
 }
 
 #logo img{
