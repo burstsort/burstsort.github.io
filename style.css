@@ -258,10 +258,10 @@ a:hover {
 .entry::after {
     content: url("./images/corner.png");
     position: absolute;
-    transform: scaleX(0.2) scaleY(0.2);
+    transform: scaleX(0.25) scaleY(0.25);
     filter: brightness(0.25);
-    top: -128px;
-    left: -126px;
+    top: -116px;
+    left: -114px;
     pointer-events: none;
 }
 
@@ -269,10 +269,10 @@ a:hover {
 .entry::before {
     content: url("./images/corner.png");
     position: absolute;
-    transform: scaleX(-0.2) scaleY(0.2);
+    transform: scaleX(-0.25) scaleY(0.25);
     filter: brightness(0.25);
-    top: -128px;
-    right: -126px;
+    top: -116px;
+    right: -114px;
     pointer-events: none;
 }
 
@@ -309,8 +309,8 @@ a:hover {
 
 .entry .main .date {
     position: absolute;
-    top: 6px;
-    right: 10px;
+    top: 12px;
+    right: 12px;
     font-size: 14px;
     color: var(--mediumgray);
 }
