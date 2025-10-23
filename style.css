@@ -171,13 +171,13 @@ a:hover {
 }
 
 #logo {
+    display: none;
     color: var(--white);
     position: relative;
     bottom: -8px;
     text-align: center;
     background-color: var(--black);
     transition-duration: var(--link-fade);
-    height: 32px;
 }
 
 #logo img{
@@ -245,6 +245,7 @@ a:hover {
     color: var(--lightgray);
     padding: 8px;
     margin: 8px;
+    margin-top: 16px;
     border: 1px solid black;
     border-radius: 8px;
     position: relative;
@@ -257,10 +258,10 @@ a:hover {
 .entry::after {
     content: url("./images/corner.png");
     position: absolute;
-    transform: scaleX(0.25) scaleY(0.25);
+    transform: scaleX(0.2) scaleY(0.2);
     filter: brightness(0.25);
-    top: -120px;
-    left: -118px;
+    top: -128px;
+    left: -126px;
     pointer-events: none;
 }
 
@@ -268,10 +269,10 @@ a:hover {
 .entry::before {
     content: url("./images/corner.png");
     position: absolute;
-    transform: scaleX(-0.25) scaleY(0.25);
+    transform: scaleX(-0.2) scaleY(0.2);
     filter: brightness(0.25);
-    top: -120px;
-    right: -118px;
+    top: -128px;
+    right: -126px;
     pointer-events: none;
 }
 
