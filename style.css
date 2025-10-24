@@ -171,7 +171,6 @@ a:hover {
 }
 
 #logo {
-    display: none;
     color: var(--white);
     position: relative;
     bottom: -8px;
